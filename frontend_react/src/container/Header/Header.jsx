@@ -31,7 +31,7 @@ const Header = () => {
                 heard.
               </p>
               <h1 className="head-text">
-                Oceanos
+               Asociation Oceanos
                 <br />
                 Servid
               </h1>
