@@ -44,7 +44,7 @@ const Work = () => {
           Our Amazing <span>Work</span> Section
         </h2>
         <div className="app__work-filter">
-          {["Volunteering", "Contest", "Hobbies", "Mental Blog", "All"].map(
+          {["Volunteering", "Contest", "Hobbies", "Mental Health", "All"].map(
             (item, index) => (
               <div
                 key={index}
