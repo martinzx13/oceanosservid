@@ -20,7 +20,7 @@ const Work = () => {
         setFilterWork(data);
       });
     }, []);
-    
+
     const handleWorkFilter = (item) => {
       setActiveFilter(item);
       setAnimateCard([{y:100, opacity:0}]);
@@ -44,7 +44,7 @@ const Work = () => {
           Our Amazing <span>Work</span> Section
         </h2>
         <div className="app__work-filter">
-          {["Volunteering", "Contest", "Hobbies", "React JS", "All"].map(
+          {["Volunteering", "Contest", "Hobbies", "Mental Health", "All"].map(
             (item, index) => (
               <div
                 key={index}
