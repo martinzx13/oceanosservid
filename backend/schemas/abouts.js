@@ -1,4 +1,4 @@
-export default{
+export default {
     name:'abouts',
     title:'Abouts',
     type: 'document',
@@ -21,6 +21,5 @@ export default{
               hotspot: true,
             },
         },
-        
     ]
 }

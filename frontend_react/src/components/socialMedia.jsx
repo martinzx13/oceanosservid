@@ -1,19 +1,22 @@
-import React from 'react'
-import { BsInstagram } from 'react-icons/bs' 
-import { FaFacebookF } from 'react-icons/fa' 
+import React from "react";
+import { BsInstagram } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 
-function socialMedia() {
+function SocialMedia() {
   return (
     <div className="app__social">
-        <div >
-            <BsInstagram/>
-        </div>
-        <div >
-            <FaFacebookF/>
-        </div>
-
+      <a href="https://www.instagram.com/oceanosservid/" target="_blank">
+      <div>
+        <BsInstagram />
+      </div>
+      </a>
+      <a href="https://www.facebook.com/oceanos.servid" target="_blank">
+      <div>
+        <FaFacebookF />
+      </div>
+      </a>
     </div>
-  )
+  );
 }
 
-export default socialMedia
+export default SocialMedia;
