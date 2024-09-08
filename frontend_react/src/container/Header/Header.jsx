@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { AppWrap} from '../../wrapper'
+import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import "./Header.scss";
 
@@ -27,25 +27,27 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ margin: 20 }}>
-              <p className="p-text">
-                Welcome, where empathy knows no boundaries, and every story is
-                heard.
-              </p>
               <h1 className="head-text">
-               Asociation Oceanos
+                Asociation Oceanos
                 <br />
                 Servid
               </h1>
+              <p className="p-text">
+                Welcome to Oceanoservid, a space where we’re passionate about
+                making a meaningful impact on the lives of those we serve. Here,
+                you'll discover how our association is dedicated to walking
+                alongside individuals, offering them tools and guidance to
+                nurture their mental well-being. Whether you're seeking support
+                or simply curious about our work, we invite you to explore,
+                connect, and join us on this journey toward a healthier, more
+                resilient future.
+              </p>
             </div>
           </div>
 
           <div className="tag-cmp app__flex">
-            <p className="p-text">
-            Harvesting Hope, Cultivating Resilience:
-            </p>
-            <p className="p-text">
-            Inspiring Journeys. 
-            </p>
+            <p className="p-text">Harvesting Hope, Cultivating Resilience:"What we do for ourselves dies with us. What we do for others and the world remains and is immortal.</p>
+            <p className="p-text">" – Albert Pine"</p>
           </div>
         </div>
       </motion.div>
@@ -66,19 +68,24 @@ const Header = () => {
         />
       </motion.div>
 
-      <motion.div 
-      variant={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
+      <motion.div
+        variant={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) =>( // modificate the images of the circles
-          <div className="circle-cpm app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
+        {[images.flutter, images.redux, images.sass].map(
+          (
+            circle,
+            index // modificate the images of the circles
+          ) => (
+            <div className="circle-cpm app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div>
+          )
+        )}
       </motion.div>
     </div>
   );
 };
 
-export default AppWrap(Header, 'home');
+export default AppWrap(Header, "home");
