@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
 import { images } from "../../constants";
@@ -13,11 +14,11 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "testimonials", "contact"].map(
+        {["home", "about", "work", "skills", "our team", "contact"].map(
           (item) => (
-            <li className="app__flex p-text " key={`link -${item}`}>
+            <li className="app__flex p-text" key={`link-${item}`}>
               <div />
-              <a href={`#${item}`}>{item}</a>
+              <Link to={`/${item === "home" ? "" : item}`}>{item}</Link>
             </li>
           )
         )}
@@ -31,20 +32,18 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {[
-                "home",
-                "about",
-                "work",
-                "skills",
-                "testimonials",
-                "contact us",
-              ].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["home", "about", "work", "skills", "our team", "contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <Link
+                      to={`/${item === "home" ? "" : item}`}
+                      onClick={() => setToggle(false)}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}
@@ -54,3 +53,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// export default Navbar;
