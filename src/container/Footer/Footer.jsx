@@ -39,7 +39,9 @@ const Footer = () => {
   };
   return (
     <>
-      <h2 className="head-text">Take a coffie & chat with me</h2>
+      <h2 className="head-text">
+        Take a <span>coffie</span> & chat with <span>us</span>
+      </h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
@@ -54,7 +56,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      {!isFormSubmitted ? 
+      {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
@@ -89,11 +91,11 @@ const Footer = () => {
             {loading ? "Sending" : "Send Message"}
           </button>
         </div>
-      : 
+      ) : (
         <div>
           <h3 className="head-text">Thanks for getting in touch</h3>
         </div>
-      }
+      )}
     </>
   );
 };

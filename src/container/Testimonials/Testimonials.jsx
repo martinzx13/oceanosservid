@@ -12,10 +12,9 @@ const Testimonial = () => {
   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleClick = (index) =>
-  {
+  const handleClick = (index) => {
     setCurrentIndex(index);
-  }
+  };
 
   useEffect(() => {
     const query = '*[_type == "testimonials"]';
@@ -32,6 +31,10 @@ const Testimonial = () => {
   const test = testimonials[currentIndex];
   return (
     <>
+      <h2 className="head-text">
+        The <span>People </span> Behind the <span>Purpose</span>
+      </h2>
+      <br></br>
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
@@ -45,23 +48,41 @@ const Testimonial = () => {
             </div>
           </div>
           <div className="app__testimonial-btns app__flex">
-            <div className="app__flex" onClick={() => handleClick(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}>
-              <HiChevronLeft/>
+            <div
+              className="app__flex"
+              onClick={() =>
+                handleClick(
+                  currentIndex === 0
+                    ? testimonials.length - 1
+                    : currentIndex - 1
+                )
+              }
+            >
+              <HiChevronLeft />
             </div>
-            <div className="app__flex" onClick={() => handleClick(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}>
-              <HiChevronRight/>
+            <div
+              className="app__flex"
+              onClick={() =>
+                handleClick(
+                  currentIndex === testimonials.length - 1
+                    ? 0
+                    : currentIndex + 1
+                )
+              }
+            >
+              <HiChevronRight />
             </div>
           </div>
         </>
       )}
       <div className="app__testimonial-brands app__flex">
-        {brands.map((brand) =>(
+        {brands.map((brand) => (
           <motion.div
-            whileInView={{opacity:[0, 1]}}
-            transition={{duration:0.5, type:'tween'}}
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 0.5, type: "tween" }}
             key={brand._id}
-            >
-              <img src={urlFor(brand.imgUrl)} alt={brand.name}/>
+          >
+            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
           </motion.div>
         ))}
       </div>
@@ -71,6 +92,6 @@ const Testimonial = () => {
 
 export default AppWrap(
   MotionWrap(Testimonial, "app__testimonial"),
-  "testimonials",
+  "our team",
   "app__primarybg"
 );
