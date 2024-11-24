@@ -11,5 +11,5 @@ const Blog = () => {
   );
 };
 
-export default Blog;
-// export default AppWrap(Blog, "blog");
+// export default Blog;
+export default AppWrap(Blog, "blog");
