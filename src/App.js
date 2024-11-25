@@ -4,6 +4,7 @@ import { About, Footer, Header, Skills, Testimonials, Work } from './container';
 import { Navbar } from './components';
 import './App.scss';
 import Blog from './container/Blog/Blog';
+import BlogPost from './container/Blog/BlogPost';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="/team" element={<Testimonials />} />
         <Route path="/contact" element={<Footer />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
     </div>
   </Router>
