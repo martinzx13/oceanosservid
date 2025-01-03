@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { AppWrap } from "../../wrapper";
 import './Blog.scss';
+import { AppWrap, MotionWrap } from "../../wrapper";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -32,4 +32,8 @@ const Blog = () => {
   );
 };
 
-export default AppWrap(Blog, "blog");
+// export default AppWrap(Blog, "blog");
+export default AppWrap(
+  MotionWrap(Blog, "app__blog"),
+  "blog",
+);
