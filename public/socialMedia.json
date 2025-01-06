@@ -19,12 +19,22 @@
         "text": "Social media allows us to bridge distances and maintain relationships that might otherwise fade away. For example, friends and family separated by geography can share updates, photos, and videos, creating a sense of closeness despite the physical distance. Additionally, social media provides platforms for communities and support networks, enabling people with common interests or challenges to connect and support each other."
       },
       {
+        "type": "image",
+        "src": "social1.jpg",
+        "alt": "Image 1 description"
+      },
+      {
         "type": "header",
         "text": "The Hidden Risks of Isolation"
       },
       {
         "type": "paragraph",
         "text": "Despite its advantages, social media also poses significant risks to our mental health. The curated nature of social media can lead to feelings of inadequacy and envy as we compare our lives to the seemingly perfect lives of others. This can result in increased feelings of loneliness and isolation. Moreover, the addictive nature of social media can disrupt our daily routines, leading to decreased productivity and social interaction in the real world."
+      },
+      {
+        "type": "image",
+        "src": "social2.png",
+        "alt": "Image 2 description"
       },
       {
         "type": "header",
@@ -47,16 +57,6 @@
         "type": "paragraph",
         "text": "By implementing these strategies, you can enjoy the benefits of social media while mitigating its negative impacts. Remember, the key is to use social media as a tool for connection rather than allowing it to dominate your life."
       }
-    ],
-    "images": [
-      {
-        "src": "social1.jpg",
-        "alt": "Image 1 description"
-      },
-      {
-        "src": "social2.png",
-        "alt": "Image 2 description"
-      }
     ]
   },
   {
@@ -70,40 +70,55 @@
         "type": "paragraph",
         "text": "Traveling is not just about visiting new places, but also about immersing yourself in the local culture. To truly experience a destination, it's important to engage with its traditions, people, and lifestyle. In this blog post, we'll explore how you can make the most of your travels by connecting with the local culture."
       },
-      { "type": "header", "text": "Participate in Local Festivals" },
       {
-        "type": "paragraph",
-        "text": "One of the best ways to experience a culture is by participating in local festivals and events. These celebrations offer a glimpse into the traditions, music, and food of a region. From the vibrant Carnival in Rio de Janeiro to the serene Cherry Blossom Festival in Japan, there's a festival for every traveler."
-      },
-      { "type": "header", "text": "Learn the Language" },
-      {
-        "type": "paragraph",
-        "text": "Even learning a few basic phrases in the local language can go a long way. It shows respect for the culture and helps you connect with locals on a deeper level. Whether it's ordering food, asking for directions, or simply greeting someone, knowing the local language enhances your travel experience."
-      },
-      { "type": "header", "text": "Try Local Cuisine" },
-      {
-        "type": "paragraph",
-        "text": "Food is a significant aspect of any culture. Be adventurous and try local dishes that you wouldn't normally eat at home. Visit local markets, dine at family-owned restaurants, and even take a cooking class to learn how to prepare traditional meals. This not only satisfies your taste buds but also enriches your cultural understanding."
-      },
-      { "type": "header", "text": "Connect with Locals" },
-      {
-        "type": "paragraph",
-        "text": "Building connections with locals can make your trip more meaningful. Stay in locally-owned accommodations, join community tours, and interact with people you meet. These interactions provide insight into the daily lives and customs of the residents, making your travel experience more authentic."
-      },
-      { "type": "header", "text": "Respect Cultural Norms" },
-      {
-        "type": "paragraph",
-        "text": "Every culture has its own set of norms and etiquettes. Research these before your trip to avoid unintentional disrespect. Whether it's dressing modestly, removing shoes before entering homes, or using specific hand gestures, understanding and respecting these customs shows cultural sensitivity and enhances your travel experience."
-      }
-    ],
-    "images": [
-      {
+        "type": "image",
         "src": "cultural_festival.jpg",
         "alt": "People participating in a vibrant cultural festival"
       },
       {
+        "type": "header",
+        "text": "Participate in Local Festivals"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of the best ways to experience a culture is by participating in local festivals and events. These celebrations offer a glimpse into the traditions, music, and food of a region. From the vibrant Carnival in Rio de Janeiro to the serene Cherry Blossom Festival in Japan, there's a festival for every traveler."
+      },
+      {
+        "type": "header",
+        "text": "Learn the Language"
+      },
+      {
+        "type": "paragraph",
+        "text": "Even learning a few basic phrases in the local language can go a long way. It shows respect for the culture and helps you connect with locals on a deeper level. Whether it's ordering food, asking for directions, or simply greeting someone, knowing the local language enhances your travel experience."
+      },
+      {
+        "type": "image",
         "src": "local_market.jpg",
         "alt": "A bustling local market with colorful produce and goods"
+      },
+      {
+        "type": "header",
+        "text": "Try Local Cuisine"
+      },
+      {
+        "type": "paragraph",
+        "text": "Food is a significant aspect of any culture. Be adventurous and try local dishes that you wouldn't normally eat at home. Visit local markets, dine at family-owned restaurants, and even take a cooking class to learn how to prepare traditional meals. This not only satisfies your taste buds but also enriches your cultural understanding."
+      },
+      {
+        "type": "header",
+        "text": "Connect with Locals"
+      },
+      {
+        "type": "paragraph",
+        "text": "Building connections with locals can make your trip more meaningful. Stay in locally-owned accommodations, join community tours, and interact with people you meet. These interactions provide insight into the daily lives and customs of the residents, making your travel experience more authentic."
+      },
+      {
+        "type": "header",
+        "text": "Respect Cultural Norms"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every culture has its own set of norms and etiquettes. Research these before your trip to avoid unintentional disrespect. Whether it's dressing modestly, removing shoes before entering homes, or using specific hand gestures, understanding and respecting these customs shows cultural sensitivity and enhances your travel experience."
       }
     ]
   }

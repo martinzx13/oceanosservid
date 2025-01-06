@@ -25,31 +25,28 @@ const BlogPost = () => {
 
   return (
     <div className="blog-container">
-      <h1>{post.title}</h1>
-      <h3>{post.subtitle}</h3>
-      <p><strong>Author:</strong> {post.author} | <strong>Date:</strong> {post.date}</p>
+      <h1 className="blog__title">{post.title}</h1>
+      <h3 className="blog__subtitle">{post.subtitle}</h3>
+      <p className="blog__meta"><strong>Author:</strong> {post.author} | <strong>Date:</strong> {post.date}</p>
       <div className="blog-content">
         {post.content.map((content, idx) => {
           if (content.type === 'paragraph') {
-            return <p key={idx}>{content.text}</p>;
+            return <p key={idx} className="blog__content">{content.text}</p>;
           } else if (content.type === 'header') {
-            return <h4 key={idx}>{content.text}</h4>;
+            return <h4 key={idx} className="blog__content">{content.text}</h4>;
           } else if (content.type === 'list') {
             return (
-              <ul key={idx}>
+              <ul key={idx} className="blog__content">
                 {content.items.map((item, listIdx) => (
                   <li key={listIdx}>{item}</li>
                 ))}
               </ul>
             );
+          } else if (content.type === 'image') {
+            return <img key={idx} src={content.src} alt={content.alt} className="blog__image" />;
           }
           return null;
         })}
-      </div>
-      <div className="blog-images">
-        {post.images.map((image, imgIdx) => (
-          <img key={imgIdx} src={image.src} alt={image.alt} />
-        ))}
       </div>
     </div>
   );

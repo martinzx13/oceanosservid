@@ -13,7 +13,7 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "timeline", "team", "contact", "blog"].map(
+        {["home", "about", "work", "timeline", "team", "contact"].map(
           (item) => (
             <li className="app__flex p-text " key={`link -${item}`}>
               <div />
@@ -38,7 +38,6 @@ const Navbar = () => {
                 "timeline",
                 "team",
                 "contact",
-                "blog",
               ].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
