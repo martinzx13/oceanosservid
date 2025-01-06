@@ -1,0 +1,146 @@
+.project-container {
+  padding: 2rem;
+  max-width: 60rem; /* Adjusted width to be more like Medium */
+  margin: 0 auto;
+  background: #fff; /* White background for the project content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.head-text {
+  text-align: center;
+  font-size: 2.5rem; /* Larger font size for the header */
+  margin-bottom: 2rem;
+  font-weight: 700; /* Bold font for the header */
+  color: #333; /* Darker color for the header */
+}
+
+.project__post {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold; /* Semi-bold font for the title */
+  color: #333; /* Darker color for the title */
+}
+
+.project__subtitle {
+  font-size: 1.25rem; /* Slightly smaller subtitle */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project__meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.project__content {
+  font-size: 1.125rem; /* Slightly larger font size for content */
+  color: #333;
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 1rem;
+  ul {
+    padding-left: 2.5rem; /* Add padding to the left of the list */
+    margin-bottom: 1.5rem; /* Add margin to the bottom of the list */
+  }
+
+  li {
+    margin-left: 1.5rem; /* Add margin to the bottom of each list item */
+    padding: 0.5rem 0; /* Add padding to the top and bottom of each list item */
+  }
+}
+
+.project-container {
+  padding: 20px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  .project__image {
+    max-width: 800px;
+    width: 60%; /* Full width for images */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
+
+.project-text {
+  flex: 1 1 100%;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .head-text {
+    font-size: 2rem;
+  }
+
+  .project__title {
+    font-size: 1.75rem;
+  }
+
+  .project__subtitle {
+    font-size: 1.25rem;
+  }
+
+  .project__content {
+    font-size: 1rem;
+  }
+
+  .project-text {
+    flex: 1 1 100%;
+  }
+
+  .project-images {
+    flex: 1 1 100%;
+  }
+
+  .project-images img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .head-text {
+    font-size: 1.5rem;
+  }
+
+  .project__title {
+    font-size: 1.25rem;
+  }
+
+  .project__subtitle {
+    font-size: 1rem;
+  }
+
+  .project__content {
+    font-size: 0.9rem;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .project-container {
+    padding: 10px;
+  }
+
+  .project-content {
+    gap: 10px;
+  }
+}
